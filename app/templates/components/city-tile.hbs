@@ -1,0 +1,9 @@
+<li>{{city.cityName}}
+  {{#if areAttractionsShowing }}
+    <p>{{city.attractions}}</p>
+    <button {{action 'attractionsHide'}}>Hide attractions</button>
+  {{else}}
+    <button {{action 'attractionsShow'}}>Show attractions</button>
+  {{/if}}
+  <button {{action 'delete' city}}>Delete</button>
+</li>
